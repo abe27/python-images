@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import cv2
+import random
 
 DATADIR = f"{os.getenv('HOME')}/Source/traindata"
 CATEGORIES = ["train"]
@@ -38,3 +39,6 @@ def create_trainning_data():
 if __name__ == "__main__":
     create_trainning_data()
     print(len(train_data))
+    random.shuffle(train_data)
+    for sample in train_data:
+        print(sample[1])
