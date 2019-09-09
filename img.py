@@ -4,8 +4,8 @@ import os
 import cv2
 import random
 
-DATADIR = f"{os.getenv('HOME')}/Source/traindata"
-CATEGORIES = ["train"]
+DATADIR = f"{os.getenv('HOME')}/Source/traindata/train"
+CATEGORIES = ["dogs", "cats"]
 IMG_SIZE = 50
 train_data = []
 
