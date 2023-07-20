@@ -5,7 +5,7 @@ import cv2
 import random
 import pickle
 
-DATADIR = f"{os.getenv('HOME')}/Source/traindata/train"
+DATADIR = f"train"
 CATEGORIES = ["dogs", "cats"]
 IMG_SIZE = 50
 train_data = []
